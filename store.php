@@ -16,7 +16,7 @@
 
   <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Cryptocurrency_Logo.svg/633px-Cryptocurrency_Logo.svg.png">
 
-  <meta name="og:description" content="Create your very own custom Minecraft achievements!">
+  <meta name="og:description" content="sudocoin - the online currency">
   <meta name="keywords" content="sudo, coin, crypto, currency">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" content="#FFFF00">
@@ -99,6 +99,7 @@
         <label for="catelist">Category</label>
         <div class="input-group mb-3">
           <select class="form-select" id="catelist" name="category">
+            <option value="everything">Everything</option>
             <option value="software">Software</option>
             <option value="exchange">Cash Exchange</option>
             <option value="books">Books (Digital & non Digital)</option>
