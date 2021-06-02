@@ -16,7 +16,7 @@
 
     <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Cryptocurrency_Logo.svg/633px-Cryptocurrency_Logo.svg.png">
 
-    <meta name="og:description" content="Create your very own custom Minecraft achievements!">
+    <meta name="og:description" content="sudocoin - the online currency">
     <meta name="keywords" content="sudo, coin, crypto, currency">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="theme-color" content="#FFFF00">
@@ -57,6 +57,11 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="transactions">Transactions</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="api">API Doumentation</a>
+                    </li>
+
 
                 </ul>
                 <form class="d-flex">
@@ -101,8 +106,8 @@
             take
             note of your password. <i>Don't lose your password, otherwise your balance will reset.</i>
             <br><br>
-            To start mining run <code>npm mine.js</code>. If you'd like to transfer, run
-            <code>npm transfer.js</code>.<br>
+            To start mining run <code>node mine.js</code>. If you'd like to transfer, run
+            <code>node transfer.js</code>.<br>
             Good luck!
         </p>
 

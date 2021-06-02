@@ -17,7 +17,7 @@
     <link rel="icon" type="image/png"
         href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Cryptocurrency_Logo.svg/633px-Cryptocurrency_Logo.svg.png">
 
-    <meta name="og:description" content="Create your very own custom Minecraft achievements!">
+    <meta name="og:description" content="sudocoin - the online currency">
     <meta name="keywords" content="sudo, coin, crypto, currency">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="theme-color" content="#FFFF00">
@@ -62,6 +62,10 @@
                         <a class="nav-link" aria-current="page" href="transactions">Transactions</a>
                     </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="api">API Doumentation</a>
+                    </li>
+
                 </ul>
                 <form class="d-flex">
                     <a href="signup" class="btn btn-outline-success">Signup</a>
@@ -77,7 +81,7 @@
         <!-- Centers content below -->
 
         <?php
-        $conn = new mysqli('localhost', 'root', '', 'coin');
+        $conn = new mysqli('', '', '', '');
 
         if (
             array_key_exists('itemName', $_POST)
@@ -88,6 +92,7 @@
             && $_POST['category']
             && $_POST['password']
         ) {
+            var_dump($_POST); echo '<br>';
             $password = base64_encode($_POST['password']);
 
             //$checkPassword = $conn->query("SELECT * FROM users WHERE id = $sellerId AND pass = '$password'");
@@ -165,7 +170,7 @@
             </div>
             <div class="mb-3">
                 <label for="i7" class="form-label">Password</label>
-                <input type="password" class="form-control" id="i7" name="descr">
+                <input type="password" class="form-control" id="i7" name="password">
             </div>
             <button style="float:left;margin-right:3px" type="submit" class="btn btn-primary">Create Item</button>
         </form>

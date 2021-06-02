@@ -58,6 +58,10 @@
             <a class="nav-link" aria-current="page" href="transactions">Transactions</a>
           </li>
 
+          <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="api">API Doumentation</a>
+          </li>
+
         </ul>
         <form class="d-flex">
           <a href="signup" class="btn btn-outline-success">Signup</a>

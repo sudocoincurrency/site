@@ -1,6 +1,10 @@
 <p style="font-size: 125%">ill improve this at some point</p>
 <?php
-$conn = new mysqli('localhost', 'root', '', 'coin');
+$conn = new mysqli('', '', '', '');
+
+
+
+
 $res = $conn->query("SELECT * FROM transactions");
 
 if ($res->num_rows > 0) {

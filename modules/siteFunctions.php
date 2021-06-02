@@ -4,7 +4,7 @@
 // index.php
 function primaryFunction()
 {
-    $conn = new mysqli('localhost', 'root', '', 'coin');
+    $conn = new mysqli('', '', '', '');
     $res = $conn->query("SELECT * FROM config")->fetch_assoc();
 
     echo 'Total Coins Mined: <b>' . $res['coinsMined'] . '/' . $res['coinCap'] . '</b><br>';
@@ -14,12 +14,14 @@ function primaryFunction()
     echo 'The current richest user has <b>' . $conn->query("SELECT * FROM users ORDER BY coin DESC LIMIT 1")->fetch_assoc()['coin'] . '</b> sudocoin!<br><br><br>';
 }
 
-
 // Secondary Function
 // createitem.php
 function secondaryFunction()
 {
-    $conn = new mysqli('localhost', 'root', '', 'coin');
+    echo 'second function';
+    $conn = new mysqli('', '', '', '');
+    var_dump($_POST);
+
 
     if (
         array_key_exists('itemName', $_POST)
@@ -32,6 +34,9 @@ function secondaryFunction()
         && $_POST['password']
         && $_POST['sellerId']
     ) {
+
+        echo 'check';
+
         $sellerId = $_POST['sellerId'];
         $itemId = $_POST['itemId'];
         $getItem = $conn->query("SELECT * FROM items WHERE sellerId = $sellerId AND itemId = $itemId");
