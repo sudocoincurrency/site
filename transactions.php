@@ -89,7 +89,7 @@
                     <td>Receiving User</td>
                 </tr>
                 <?php
-                $conn = new mysqli('localhost', 'root', '', 'coin');
+                $conn = new mysqli('', '', '', '');
                 $res = $conn->query("SELECT * FROM transactions");
 
                 if ($res->num_rows > 0) {
